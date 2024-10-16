@@ -570,7 +570,7 @@ extension DropDown {
 
 		if !layout.canBeDisplayed {
 			super.updateConstraints()
-			hide()
+//			hide()
 
 			return
 		}
