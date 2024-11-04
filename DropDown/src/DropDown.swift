@@ -979,6 +979,7 @@ extension DropDown {
                 at: IndexPath(row: index, section: 0), animated: true, scrollPosition: scrollPosition
             )
             selectedRowIndices.insert(index)
+            selectionAction?(index, dataSource[index])
 		} else {
 			deselectRows(at: selectedRowIndices)
             selectedRowIndices.removeAll()
